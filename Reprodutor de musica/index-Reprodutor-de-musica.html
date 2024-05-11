@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reprodutor de Playlist</title>
+    <style>
+        /* Estilos opcionais */
+    </style>
+</head>
+<body>
+    <h1>Reprodutor de Playlist</h1>
+    <ul id="playlist">
+        <li><a href="Alan Walker x Imanbek - Sweet Dreams (Official Music Video).mp3">Music 1</a></li>
+        <li><a href="Pitbull - International Love (Official Video) ft. Chris Brown.mp3">Music 2</a></li>
+        <li><a href="Alan Walker, Dash Berlin & Vikkstar - Better Off (Alone, Pt. III) - Official Music Video.mp3">Music 3</a></li>
+    </ul>
+    <button onclick="play()">Play</button>
+    <button onclick="pause()">Pause</button>
+    <button onclick="stop()">Stop</button>
+
+    <script>
+        var playlist = ["Song 1", "Song 2", "Song 3"]; // Adicione os títulos das músicas aqui
+        function play() {
+            var songIndex = Math.floor(Math.random() * playlist.length);
+            var song = playlist[songIndex];
+            console.log("Now playing: " + song);
+            // Adicione lógica de reprodução de música aqui
+        }
+
+        function pause() {
+            console.log("Paused");
+            // Adicione lógica de pausa de música aqui
+        }
+
+        function stop() {
+            console.log("Stopped");
+            // Adicione lógica de parada de música aqui
+        }
+    </script>
+</body>
+</html>
